@@ -1,0 +1,693 @@
+:root {
+    --color-accent-50: #d9fc53;
+    --color-accent-70: #a9cc20;
+    --color-background: #ffffff;
+    --color-basic-green-50: #0ca966;
+    --color-basic-red-50: #d93603;
+    --color-basic-yellow-50: #ffb800;
+    --color-black: #000000;
+    --color-border-50: rgba(0, 0, 10, 0.13);
+    --color-tint: #f2f2f4;
+    --color-underline: rgba(0, 0, 0, 0.15);
+    --color-neutral-30: #bebfc1;
+    --color-neutral-40: #a4a6a8;
+    --color-neutral-50: #888a8c;
+    --color-neutral-80: #36383a;
+    --color-neutral-90: #1a1c1e;
+    --color-text: #1a1c1e;
+    --color-white: #ffffff;
+    --content-spacing-h: 32px;
+    --content-spacing-v: 16px;
+    --font-size-l: 16px;
+    --font-size-m: 15px;
+    --font-size-s: 14px;
+    --font-size-xs: 12px;
+    --font-size-xxs: 11px;
+    --radius-l: 16px;
+    --radius-m: 8px;
+    --shadow-big: inset 0 -1px 0 rgba(0, 0, 0, 0.15), 0 10px 20px rgba(0, 0, 0, 0.04), 0 7px 9px rgba(0, 0, 0, 0.03), 0 3px 3px rgba(0, 0, 0, 0.02), inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+    --shadow-button-bordered: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+    --shadow-badge-new: inset 0 -6px 3px rgba(0, 0, 0, 0.04), inset 0 -1px 0 rgba(0, 0, 0, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+    --shadow-nav-active: inset 0px 20px 20px rgba(0, 0, 0, 0.05), inset 0px -1px 0px rgba(255, 255, 255, 0.7), inset 0px 1px 1px rgba(0, 0, 0, 0.03), inset 0px 1px 3px rgba(0, 0, 0, 0.03);
+    --sidebar-width: 272px;
+    --space-l: 24px;
+    --space-m: 16px;
+    --space-s: 8px;
+    --space-xl: 36px;
+    --space-xs: 4px;
+    --space-xxs: 2px;
+}
+
+html,
+body {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html,
+body,
+app-root {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", "Segoe UI", sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat", "Segoe UI", sans-serif;
+    word-break: break-word;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.27;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.56em;
+    margin: 0 0 1em 0;
+    max-width: 70em;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-tint);
+    color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    word-break: break-word;
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    font-weight: 600
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 1.27;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.33;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+h5 {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+p {
+    line-height: 1.56em;
+    margin: 0 0 1em 0;
+    max-width: 70em;
+}
+
+* html hr {
+    margin: 0
+}
+
+* + html hr {
+    margin: 0
+}
+
+hr {
+    margin: var(--space-m) 0;
+    height: 1px;
+    color: var(--color-border-50);
+    background-color: var(--color-border-50);
+    border: none
+}
+
+a {
+    color: var(--color-text);
+    text-decoration-color: var(--color-underline);
+    cursor: pointer;
+}
+
+a:hover {
+    color: var(--color-accent-70);
+    text-decoration-color: var(--color-accent-70)
+}
+
+div.icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+div.page-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.page-wrapper > main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+div.content-layout {
+    flex-grow: 1;
+    display: flex;
+    justify-content: stretch;
+}
+
+div.content-layout aside {
+    width: var(--sidebar-width);
+    flex-shrink: 0;
+}
+
+div.content-layout aside nav.main {
+    padding: var(--space-m) var(--space-s) var(--space-s) var(--space-s);
+}
+
+div.content-layout aside nav.main ul,
+div.content-layout aside nav.main ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+div.content-layout aside nav.main li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+div.content-layout aside nav.main ul > li {
+}
+
+div.content-layout aside nav.main ul > li:last-child {
+    margin-bottom: 0;
+}
+
+div.content-layout aside nav.main ul > li > a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    border-radius: var(--radius-m);
+    text-decoration: none
+}
+
+div.content-layout aside nav.main ul > li > a div.icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px
+}
+
+div.content-layout aside nav.main ul > li > a div.icon svg {
+    width: 24px;
+    height: 24px;
+    color: var(--color-neutral-90)
+}
+
+div.content-layout aside nav.main ul > li div.text {
+    flex-grow: 1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1.1em;
+    font-size: var(--font-size-l)
+}
+
+div.content-layout aside nav.main ul > li div.text span.counter {
+    display: block;
+    position: absolute;
+    right: var(--space-s);
+    top: 50%;
+    min-width: 1.45em;
+    text-align: center;
+    margin-top: calc(-1 * var(--space-s));
+    color: var(--color-white);
+    background-color: var(--color-basic-red-50);
+    white-space: nowrap;
+    line-height: 1;
+    padding: var(--space-xxs) var(--space-xs);
+    border-radius: var(--radius-m);
+    font-size: var(--font-size-xxs);
+    font-weight: 500;
+    margin-left: 1em
+}
+
+div.content-layout aside nav.main ul > li > a:hover {
+    color: var(--color-neutral-90);
+    background-color: var(--color-background);
+}
+
+div.content-layout aside nav.main ul > li.active > a {
+    color: var(--color-black);
+    background-color: var(--color-accent-50);
+    box-shadow: var(--shadow-nav-active);
+}
+
+div.content-layout aside nav.main ul > li.active div.icon svg {
+    color: var(--color-black)
+}
+
+div.content-layout aside nav.main ul > li.active .text {
+    font-weight: 600;
+}
+
+div.content-layout aside nav.main ol {
+    margin: 8px 0 8px 32px;
+}
+
+div.content-layout aside nav.main ol > li > a {
+    display: flex;
+    align-items: center;
+    margin-left: var(--space-m);
+    padding: 10px 0;
+    font-size: var(--font-size-m);
+    text-decoration: none
+}
+
+div.content-layout aside nav.main ol > li > a.unavailable {
+    color: var(--color-neutral-40);
+}
+
+div.content-layout aside nav.main ol > li.active > a {
+    color: var(--color-neutral-90);
+    font-weight: 600;
+}
+
+div.content-layout aside nav.main ol > li > a span.counter {
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--color-white);
+    background-color: var(--color-basic-red-50);
+    min-width: 1.45em;
+    text-align: center;
+    white-space: nowrap;
+    line-height: 1;
+    padding: var(--space-xxs) var(--space-xs);
+    border-radius: var(--radius-m);
+    font-size: var(--font-size-xxs);
+    font-weight: 500;
+    margin-left: 1em
+}
+
+div.content-layout aside nav.main ol > li > a span.badge-new {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+    text-transform: uppercase;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 9px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    padding: 0.5em 0.5em;
+    border-radius: 0.4em;
+    color: var(--color-black);
+    background-color: var(--color-accent-50);
+    box-shadow: var(--shadow-badge-new);
+}
+
+div.content-layout aside nav.main ol > li::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    margin-top: -4px;
+    left: -2px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+div.content-layout aside nav.main ol > li.active::before {
+    background-color: var(--color-text);
+}
+
+div.content-layout aside nav.main ol > li > a:hover {
+    color: var(--color-neutral-80);
+}
+
+div.content-layout aside nav.main ol > li:hover::before {
+    background-color: var(--color-neutral-40);
+}
+
+div.content-layout div.page-content {
+    flex-grow: 1;
+    padding: var(--content-spacing-v) var(--content-spacing-h);
+    border-radius: var(--radius-l) 0 0 0;
+    background-color: var(--color-background);
+}
+
+div.content-layout div.page-content h1 {
+    margin-top: 0;
+}
+
+ul.page-cards {
+    display: flex;
+    justify-content: stretch;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: var(--space-m)
+}
+
+ul.page-cards li.page-card-item {
+    width: 33%;
+    padding: var(--space-m) var(--space-l) var(--space-l) var(--space-l);
+    box-shadow: var(--shadow-button-bordered);
+    border-radius: var(--radius-l);
+}
+
+ul.page-cards li.page-card-item:hover {
+    box-shadow: var(--shadow-big);
+}
+
+ul.page-cards li.page-card-item.locked:hover {
+    box-shadow: var(--shadow-button-bordered);
+}
+
+ul.page-cards li.page-card-item div.heading {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    gap: var(--space-s);
+    align-items: center;
+    padding-bottom: var(--space-m);
+    border-bottom: 1px solid var(--color-border-50);
+}
+
+ul.page-cards li.page-card-item div.heading div.icon {
+    flex: 0 0 auto;
+    margin-right: 0;
+    width: 24px;
+    height: 24px;
+}
+
+ul.page-cards li.page-card-item div.heading h3 {
+    margin: 0 auto 0 0;
+    font-size: 22px;
+    line-height: 1.2em;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+ul.page-cards li.page-card-item div.heading h3 a {
+    text-decoration: none;
+}
+
+ul.page-cards li.page-card-item div.heading div.counter {
+    flex: 0 0 auto;
+    margin-left: auto;
+    font-size: var(--font-size-s);
+    padding: 0.2em 0.5em;
+    background-color: var(--color-accent-50);
+    color: var(--color-black);
+    font-weight: 500;
+    border-radius: 1em;
+}
+
+ul.page-cards li.page-card-item div.content {
+    display: flex;
+    padding-top: var(--space-l);
+    min-height: 15rem;
+}
+
+ul.page-cards li.page-card-item div.content ul.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.page-cards li.page-card-item div.content ul.nav-list li {
+    position: relative;
+    margin: 0 0 1em 0;
+    padding: 0 0 0 20px;
+}
+
+ul.page-cards li.page-card-item div.content ul.nav-list li::before {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 0;
+    top: 50%;
+    margin-top: -4px;
+    border-right: 2px solid var(--color-accent-70);
+    border-bottom: 2px solid var(--color-accent-70);
+    transform: rotate(-45deg);
+}
+
+ul.page-cards li.page-card-item div.content ul.nav-list li a {
+    text-decoration: none;
+}
+
+ul.page-cards li.page-card-item div.content ul.nav-list li.search a {
+    font-weight: 600
+}
+
+ul.page-cards li.page-card-item div.content ul.nav-list li.search div.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-top: -4px;
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.description {
+    margin-top: calc(-1 * var(--space-s));
+    margin-bottom: var(--space-m);
+    color: var(--color-neutral-50);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: var(--space-l);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m)
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules div.name {
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons {
+    display: flex;
+    align-items: center;
+    margin: 0 3px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li {
+    position: relative;
+    margin: 0 -3px 0 0;
+    padding: 0;
+    width: 10px;
+    height: 14px;
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li::before {
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    top: 50%;
+    left: 50%;
+    margin-top: -5px;
+    margin-left: -5px;
+    border-radius: 5px;
+    background-color: var(--color-neutral-30);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    border-left: 1px solid var(--color-neutral-30);
+    border-right: 1px solid var(--color-background);
+    height: 15px;
+    top: 50%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -1px;
+    transform: rotate(35deg);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li.notice::before {
+    background-color: var(--color-basic-green-50);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li.notice::after {
+    display: none
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li.warning::before {
+    background-color: var(--color-basic-yellow-50);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li.warning::after {
+    display: none
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li.critical::before {
+    background-color: var(--color-basic-red-50);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules ul.rule-icons li.critical::after {
+    display: none
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules div.used,
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.rules div.unused {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs)
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.coverage {
+    text-align: right;
+    max-width: 4em;
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.coverage div.number {
+    font-size: 24px;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    font-weight: 500;
+    margin-bottom: var(--space-xs);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.coverage div.name {
+    font-size: var(--font-size-xs);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.coverage.coverage-level-low div.number {
+    color: var(--color-basic-red-50);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.coverage.coverage-level-medium div.number {
+    color: var(--color-basic-yellow-50);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.statistics div.coverage.coverage-level-complete div.number {
+    color: var(--color-accent-70);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    z-index: 1
+}
+
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.probability {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: var(--space-xl);
+    color: var(--color-neutral-50)
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.probability div.wrapper {
+    position: relative;
+    display: flex;
+    gap: var(--space-xs);
+    align-items: center;
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.probability div.bubble {
+    position: absolute;
+    left: -2rem;
+    right: -1rem;
+    top: -2rem;
+    bottom: -3rem;
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.probability div.bubble svg {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.probability div.number {
+    font-size: 32px;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    font-weight: 500;
+    margin-right: var(--space-s);
+}
+
+ul.page-cards li.page-card-item div.content div.card-trigger div.probability div.name {
+    font-size: var(--font-size-xs);
+    width: 10em;
+}
