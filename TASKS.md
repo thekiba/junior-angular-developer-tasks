@@ -163,6 +163,11 @@ type EnhancedNavigationRoute = NavigationRoute & {
    * Parent route, used for simplifying the walking of the route tree
    */
   parent?: EnhancedNavigationRoute | null;
+
+  /**
+   * Enchaced child routes, used for displaying nested routes
+   */
+  children?: EnhancedNavigationRoute[];
 }
 
 /**
