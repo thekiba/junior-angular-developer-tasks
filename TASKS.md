@@ -255,7 +255,7 @@ In this task, you need to implement components that will represent cards for dis
 3. `app-page-card-item-heading`: A component for displaying the card's heading.
 4. `app-page-card-item-content`: A component for displaying the card's content.
 
-**_Tip:_** Use <ng-template>, <ng-content> (or directives) and ContentChild to implement the components.
+**_Tip:_** Use `<ng-template>`, `<ng-content>` (or directives) and ContentChild to implement the components.
 
 **Acceptance Criteria:**
 
