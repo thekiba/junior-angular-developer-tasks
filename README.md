@@ -10,7 +10,7 @@ Your progress, persistence, and learning agility are what truly matter in this a
 
 1. **Test Assignment**: Your journey begins with the Test Assignment. The assignment consists of several interconnected tasks designed to test your skills and understanding of Angular. Navigate to the [TASKS.md](./TASKS.md) file to get started.
 
-2. **License**: Make sure to read and understand the conditions mentioned in the [LICENSE](./LICENSE) file.
+2. **License**: Make sure to read and understand the conditions mentioned in the [LICENSE.md](./LICENSE.md) file.
 
 3. **Continuous Learning and Assistance**: Should you encounter any difficulties during the process, don't hesitate to reach out to @thekiba for consultation and assistance.
 
